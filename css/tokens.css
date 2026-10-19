@@ -1,0 +1,16 @@
+/* Palco escuro de pedaleira: painéis azul-noite, ciano para ação, âmbar para seleção.
+   Tema único de propósito (app de palco); todas as cores saem daqui. */
+:root {
+  --bg: #070d17; --panel: #0e1828; --panel2: #132238; --field: #0a1322;
+  --line: #1f3550; --line2: #2b4a6e;
+  --fg: #e7eef7; --muted: #8ea3bd; --dim: #5f7491;
+  --accent: #38bdf8; --accent-ink: #04121d; --amber: #e8a23a;
+  --ok: #3ddc84; --ok-strong: #2fbf71; --ok-ink: #04170c; --bad: #f2675d;
+  --notice-bg: #1a1a12; --notice-fg: #eadfc4; --danger-line: #6b2a2a; --danger-fg: #ffb3ad;
+  --toast-bg: #e7eef7; --toast-fg: #0a1422; --toast-bad-bg: #ffd9d5; --toast-bad-fg: #4a0c06;
+  --tile-off: #1a2638;
+  --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", system-ui, sans-serif;
+  --body: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --r: 10px;
+  color-scheme: dark;
+}

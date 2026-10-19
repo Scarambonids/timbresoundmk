@@ -1,0 +1,20 @@
+/* Cabine padrão por família de amp, quando o timbre não diz qual usar. */
+export const CAB_FAMILY = [
+  [/fender|tweed|bassman|princeton|deluxe|super|twin|bandmaster|vibrolux|frontman|red knob/i, 'Fender Twin Reverb'],
+  [/vox|ac30|ac15|brit1|matchless/i, 'Vox AC30 Combo'],
+  [/plexi|jtm45|1959|1969/i, 'Marshall Plexi (1960)'],
+  [/marshall|jcm|jvm|silver jubilee|studio vintage|sv20/i, 'Marshall 1960 con V30'],
+  [/rectifier|mesa.*dual/i, 'Mesa Rectifier Standard'],
+  [/mesa|boogie|mark v|lone star/i, 'Mesa Boogie Oversize'],
+  [/orange/i, 'Orange PPC412'],
+  [/engl/i, 'Engl Standard 4x12'],
+  [/diezel/i, 'Diezel 4x12'],
+  [/peavey|5150|6505/i, 'Peavey 5150/6505 Cab'],
+  [/soldano/i, 'Soldano SLO Straight 4x12'],
+  [/bogner/i, 'Bogner Überkab'],
+  [/friedman/i, 'Friedman Vintage 4x12'],
+  [/randall/i, 'Randall Cab'],
+  [/roland|jc-120|jazz chorus/i, 'Roland JC-120'],
+  [/supro/i, 'Fender Princeton'],
+  [/two rock|dumble|tone king|magnatone/i, 'Fender Twin Reverb'],
+];

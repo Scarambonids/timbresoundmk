@@ -1,0 +1,37 @@
+/* faixa de conexão */
+.conn { margin-top: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.conn .st { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.conn .btns { display: grid; grid-template-columns: 1fr 1fr 1.3fr .8fr; gap: 6px; margin-top: 8px; }
+
+/* preset: cadeia em duas fileiras, como na pedaleira */
+input.name { font-size: 20px; font-weight: 700; text-transform: uppercase; }
+.chain { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px 6px; position: relative; margin-top: 12px; }
+.chain::before, .chain::after { content: ""; position: absolute; left: 0; right: 0; height: 2px; background: var(--accent); opacity: .55; z-index: 0; }
+.chain::before { top: 25px; } .chain::after { top: 87px; }
+.blk { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; background: none; border: 0; cursor: pointer; padding: 0; }
+.blk .t { width: 100%; max-width: 52px; aspect-ratio: 1; border-radius: 9px; border: 1px solid var(--line2); background: var(--tile-off); display: grid; place-items: center; font-family: var(--display); font-weight: 700; font-size: 12px; color: var(--muted); }
+.blk.on .t { color: #fff; }
+.blk.sel .t { outline: 2px solid var(--amber); outline-offset: 2px; }
+.detail { margin-top: 14px; background: var(--panel2); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
+.detail h3 { font-size: 19px; display: flex; align-items: center; gap: 8px; }
+.kv { color: var(--muted); font-size: 14px; margin-top: 6px; line-height: 1.6; }
+.kv b { color: var(--fg); font-weight: 600; }
+.explain { font-size: 14px; color: var(--fg); opacity: .85; margin-top: 6px; }
+.explain ul { margin: 6px 0 0; padding-left: 18px; }
+
+/* música */
+.title { font-size: 24px; }
+.big2 { font-size: 22px; }
+.player { display: grid; gap: 10px; margin-top: 14px; }
+video { width: 100%; border-radius: 10px; background: #000; margin-top: 8px; }
+
+/* ao vivo */
+.mods { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.mod { border: 1px solid var(--line2); border-radius: 9px; padding: 11px 4px; font-family: var(--display); font-weight: 700; letter-spacing: .05em; background: var(--field); color: var(--muted); cursor: pointer; touch-action: manipulation; }
+.mod.on { background: var(--ok-strong); border-color: var(--ok-strong); color: var(--ok-ink); }
+.mod:disabled { opacity: .45; }
+.big { font-family: var(--display); font-size: 42px; font-weight: 700; line-height: 1; }
+.bignum { text-align: center; font-size: 20px; font-family: var(--display); font-weight: 700; }
+.current { font-size: 22px; margin-top: 8px; }
+
+@media (max-width: 380px) { .conn .btns { grid-template-columns: 1fr 1fr; } .mods { grid-template-columns: repeat(3, 1fr); } .indent { margin-left: 0; } }
